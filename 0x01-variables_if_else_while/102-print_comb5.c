@@ -15,6 +15,8 @@ int main(void)
     {
       while (j < 58)
 	{
+	  while (y < 58)
+	    {
 	  while (z < 58)
 	    {
 	      putchar(i);
