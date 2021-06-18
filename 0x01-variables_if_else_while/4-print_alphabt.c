@@ -1,4 +1,4 @@
-#inlcude <stdio.h>
+#include <stdio.h>
 
 /**
  *main - Entry point
@@ -10,7 +10,7 @@ int main(void)
 {
   int letter;
 
-  for (letter - 'a'; letter <= 'z'; letter++)
+  for (letter = 'a'; letter <= 'z'; letter++)
     {
       if (letter == 'e' || letter == 'q')
 	continue;
