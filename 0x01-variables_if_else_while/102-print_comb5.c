@@ -9,41 +9,26 @@
  */
 int main(void)
 {
-  int i = 48, j = 48, y = 48, z = 49;
+int i, j;
 
-  while (i < 58)
-    {
-      while (j < 58)
-	{
-	  while (y < 58)
-	    {
-	  while (z < 58)
-	    {
-	      putchar(i);
-	      putchar(j);
-	      putchar(' ');
-	      putchar(y);
-	      putchar(z);
-	      if (!(i == 56 &&
-		    j == 57 &&
-		    z == 57))
-		{
-		  putchar(',');
-		  putchar(' ');
-		}
-	      z++;
-	    }
-	  y++;
-	  z=48;
-	}
-      j++;
-      y = i;
-      z = j + 1;
-    }
-  i++;
-  j = 48;
-  y = i;
-  z = j + 1;
+for (i = 0; i < 100; i++)
+{
+for (j = 0; j < 100; j++)
+{
+if (i < j)
+{
+putchar((i / 10) + 48);
+putchar((i % 10) + 48);
+putchar(' ');
+putchar((j / 10) + 48);
+putchar((j % 10) + 48);
+if (i != 98 || j != 99)
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
 }
 putchar('\n');
 return (0);
