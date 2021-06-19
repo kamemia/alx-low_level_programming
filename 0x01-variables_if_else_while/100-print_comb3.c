@@ -2,7 +2,6 @@
 /* more headers goes there */
 /* betty style for function main goes there */
 /**
- *
  *main - Entry point
  *
  *Return: Always 0 (success)
@@ -19,7 +18,7 @@ while (j < 58)
 putchar(i);
 putchar(j);
 
-if (i != 56 || j!= 57)
+if (i != 56 || j != 57)
 {
 putchar(',');
 putchar(' ');
