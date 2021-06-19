@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  *main - simple demonstration of printf
  *
  *Return: Always 0
