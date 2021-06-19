@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+/* more headers goes there */
+/* betty style for function main goes there */
 /**
  *
  *main - Entry point
@@ -9,25 +10,25 @@
  */
 int main(void)
 {
-  int i = 48, j = 49;
+int i = 48, j = 49;
 
-  while (i < 58)
-    {
-      while (j < 58)
-	{
-	  putchar(i);
-	  putchar(j);
+while (i < 58)
+{
+while (j < 58)
+{
+putchar(i);
+putchar(j);
 
-	  if (i != 56 || j!= 57)
-	    {
-	      putchar(',');
-	      putchar(' ');
-	    }
-	  j++;
-	}
-      i++;
-      j = i + 1;
-    }
-  putchar('\n');
-  return (0);
+if (i != 56 || j!= 57)
+{
+putchar(',');
+putchar(' ');
+}
+j++;
+}
+i++;
+j = i + 1;
+}
+putchar('\n');
+return (0);
 }
