@@ -1,61 +1,43 @@
 #include "holberton.h"
-/**
-* prime - calculate the prime number
-*@n: number to verify
-*@d: number to divide
-*Return: the value
-*/
 
-int prime(int n, int d)
+int is_divisible(int num, int div);
+int is_prime_number(int n);
+
+/**
+ * is_divisible - Checks if a number is divisible.
+ * @num: The number to be checked.
+ * @div: The divisor.
+ *
+ * Return: If the number is divisible - 0.
+ *         If the number is not divisible - 1.
+ */
+int is_divisible(int num, int div)
 {
-	if (n == d)
-		return (1);
-	if (n % d == 0 || n <= 1)
+	if (num % div == 0)
 		return (0);
-	return (prime(n, d + 1));
+
+	if (div == num / 2)
+		return (1);
+
+	return (is_divisible(num, div + 1));
 }
 
 /**
-* is_prime_number - Verify if n is prime
-*@n: number to verify
-*Return: 0 if n is not prime, 1 if n is prime
-*/
+ * is_prime_number - Checks if a number is prime.
+ * @n: The number to be checked.
+ *
+ * Return: If the integer is not prime - 0.
+ *         If the number is prime - 1.
+ */
 int is_prime_number(int n)
 {
-	int d;
+	int div = 2;
 
-	d = 2;
-	if (n == 1)
+	if (n <= 1)
 		return (0);
-	return (prime(n, d));
-}#include "holberton.h"
-/**
-* prime - calculate the prime number
-*@n: number to verify
-*@d: number to divide
-*Return: the value
-*/
 
-int prime(int n, int d)
-{
-	if (n == d)
+	if (n >= 2 && n <= 3)
 		return (1);
-	if (n % d == 0 || n <= 1)
-		return (0);
-	return (prime(n, d + 1));
-}
 
-/**
-* is_prime_number - Verify if n is prime
-*@n: number to verify
-*Return: 0 if n is not prime, 1 if n is prime
-*/
-int is_prime_number(int n)
-{
-	int d;
-
-	d = 2;
-	if (n == 1)
-		return (0);
-	return (prime(n, d));
+	return (is_divisible(n, div));
 }
