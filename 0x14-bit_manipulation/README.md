@@ -9,10 +9,10 @@
 This project is about how to manipulate bits and use bitwise operators.
 
 
-##Files
+## Files
 ----
 
-###Task
+### Task
 
 |File|Description|
 |------|------------|
@@ -23,6 +23,6 @@ This project is about how to manipulate bits and use bitwise operators.
 |4-clear_bit.c|Function that sets the value of a bit to 0 at a given index|
 |5-flip_bits.c|Function that returns the number of bits you would need to flip to get from one number to another|
 
-##Author
+## Author
 ----
 [Vincent Kamemia](https://github.com/kamemia)
